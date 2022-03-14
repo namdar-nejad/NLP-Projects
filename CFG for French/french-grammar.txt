@@ -1,0 +1,78 @@
+S -> NP-1-Sing VP-1-Sing | NP-1-Plu VP-1-Plu | NP-2-Sing VP-2-Sing | NP-2-Plu VP-2-Plu | NP-3-Sing-M VP-3-Sing-M | NP-3-Plu-M VP-3-Plu-M | NP-3-Sing-F VP-3-Sing-F | NP-3-Plu-F VP-3-Plu-F
+
+NP -> NP-1-Sing | NP-1-Plu | NP-2-Sing | NP-2-Plu | NP-3-Sing-M | NP-3-Plu-M | NP-3-Sing-F | NP-3-Plu-F
+
+NP-1-Sing -> PR-1-Sing
+NP-1-Plu -> PR-1-Plu
+NP-2-Sing -> PR-2-Sing
+NP-2-Plu -> PR-2-Plu
+NP-3-Sing-M -> DT-Sing-M NA-Sing-M | PR-3-Sing-M | PN-M-1 | DT-Sing-M PN-M-2
+NP-3-Sing-F -> DT-Sing-F NA-Sing-F | PR-3-Sing-F | PN-F-1 | DT-Sing-F PN-F-2
+NP-3-Plu-M -> DT-Plu NA-Plu-M | PR-3-Plu-M
+NP-3-Plu-F -> DT-Plu NA-Plu-F | PR-3-Plu-F
+
+PN-M-1 -> 'Jonathan'
+PN-F-1 -> 'Montreal'
+PN-M-2 -> 'Canada'
+
+PR-1-Sing -> 'je'
+PR-1-Plu -> 'nous'
+PR-2-Sing -> 'tu'
+PR-2-Plu -> 'vous'
+PR-3-Sing-M -> 'il'
+PR-3-Sing-F -> 'elle' 
+PR-3-Plu-M -> 'ils'
+PR-3-Plu-F -> 'elles' 
+
+DT-Sing-M -> 'le' | 'un'
+DT-Sing-F -> 'la' | 'une'
+DT-Plu -> 'les' | 'des'
+
+NA-Sing-M -> N-Sing-M | N-Sing-M A-1-Sing-M | A-2-Sing-M N-Sing-M | N-Sing-M A-3-Sing-M | A-3-Sing-M N-Sing-M 
+NA-Sing-F -> N-Sing-F | N-Sing-F A-1-Sing-F | A-2-Sing-F N-Sing-F | N-Sing-F A-3-Sing-F | A-3-Sing-F N-Sing-F
+NA-Plu-M -> N-Plu-M | N-Plu-M A-1-Plu-M | A-2-Plu-M N-Plu-M | N-Plu-M A-3-Plu-M | A-3-P3-M N-Plu-M
+NA-Plu-F -> N-Plu-F | N-Plu-F A-1-Plu-F | A-2-Plu-F N-Plu-F | N-Plu-F A-3-Plu-F | A-3-P3-F N-Plu-F
+
+neg-1 -> 'ne'
+neg-2 -> 'pas'
+
+VP -> VP-1-Sing | VP-1-Plu | VP-2-Sing | VP-2-Plu | VP-3-Sing-M | VP-3-Plu-M | VP-3-Sing-F | VP-3-Plu-F
+
+VP-1-Sing -> V-1-Sing NP | PR-do V-1-Sing | PR-do neg-1 V-1-Sing neg-2 | neg-1 V-1-Sing neg-2 NP
+VP-1-Plu -> V-1-Plu NP | PR-do V-1-Plu | PR-do neg-1 V-1-Plu neg-2 | neg-1 V-1-Plu neg-2 NP
+VP-2-Sing -> V-2-Sing NP | PR-do V-2-Sing | PR-do neg-1 V-2-Sing neg-2 | neg-1 V-2-Sing neg-2 NP
+VP-2-Plu -> V-2-Plu NP | PR-do V-2-Plu | PR-do neg-1 V-2-Plu neg-2 | neg-1 V-2-Plu neg-2 NP
+VP-3-Sing-M -> V-3-Sing-M NP | PR-do V-3-Sing-M | PR-do neg-1 V-3-Sing-M neg-2 | neg-1 V-3-Sing-M neg-2 NP
+VP-3-Sing-F -> V-3-Sing-F NP | PR-do V-3-Sing-F | PR-do neg-1 V-3-Sing-F neg-2 | neg-1 V-3-Sing-F neg-2 NP
+VP-3-Plu-M -> V-3-Plu-M NP | PR-do V-3-Plu-M | PR-do neg-1 V-3-Plu-M neg-2 | neg-1 V-3-Plu-M neg-2 NP
+VP-3-Plu-F -> V-3-Plu-F NP | PR-do V-3-Plu-F | PR-do neg-1 V-3-Plu-F neg-2 | neg-1 V-3-Plu-F neg-2 NP
+
+PR-do -> 'me' | 'te' | 'le' | 'la' | 'nous' | 'vous' | 'les'
+
+N-Sing-M -> 'chat' | 'poisson' | 'pouvoir'
+N-Sing-F -> 'television' | 'femme' 	| 'fille' | 'semaine'
+N-Plu-M -> 'chats' | 'poissons'| 'pouvoirs'
+N-Plu-F -> 'televisions' | 'femmes' | 'filles' | 'semaines'
+
+V-1-Sing -> 'mange' | 'aime' | 'regarde' | 'cherche'
+V-1-Plu -> 'mangeons' | 'aimons' | 'regardons' | 'cheechons'
+V-2-Sing -> 'manges' | 'aimes' | 'regardes' | 'cherches'
+V-2-Plu -> 'mangez' | 'aimez' | 'regardez' | 'cherchez'
+V-3-Sing-M -> 'mange' | 'aime' | 'regarde' | 'cherche'
+V-3-Sing-F -> 'mange' | 'aime' | 'regarde' | 'cherche'
+V-3-Plu-M -> 'mangent' | 'aimez' | 'regardent' | 'cherchez'
+V-3-Plu-F -> 'mangent' | 'aiment' | 'regardent' | 'cherchent'
+
+A-1-Sing-M -> 'noir' | 'heureux' | 'blanc'
+A-1-Sing-F -> 'noire' | 'heureuse' | 'blanche'
+A-1-Plu-M -> 'noirs' | 'heureux' | 'blancs'
+A-1-Plu-F -> 'noires' | 'heureuses' | 'blanches'
+A-2-Sing-M -> 'beau' | 'joli' |  'jeune'
+A-2-Sing-F -> 'belle' | 'jolie' |  'jeune'
+A-2-Plu-M -> 'beaux' | 'jolis' |  'jeunes'
+A-2-Plu-F -> 'belles' | 'jolies' |  'jeunes'
+A-3-Sing-M -> 'grand' | 'dernier' | 'ancien'
+A-3-Sing-F -> 'grande' | 'derniere' | 'ancienne'
+A-3-Plu-M -> 'grands' | 'derniers' | 'anciens'
+A-3-Plu-F -> 'grandes' | 'dernieres' | 'anciennes'
+
